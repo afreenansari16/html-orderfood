@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navigation bar logo */
+#logo {
+    margin: 1px 4px;
+}
+
+#logo img {
+    height: 100px;
+    margin: 12px 15px;
+    filter: invert(red);
+}
+#navbar{
+    position: absolute;
+}
+
+/* Navigationbar:List styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 586px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/foodtbl.jpg') no-repeat center center/cover;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    width: 130%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* utility classes */
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* Services Section */
+#services{
+    margin: 2px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(135, 158, 135);
+    padding: 31px;
+    margin: -1px 16px;
+    border-radius: 34px;
+    background-color: rgb(232, 252, 217);
+    margin-bottom: 10px;
+    height: 221px;
+    object-fit: none;
+}
+#services .box img{
+height: 100px;
+margin: auto;
+display: block;
+}
+#services .box p{
+    margin: 2px;
+    display: flex;
+}
+/* Client Section */
+#client-section{
+     height: 344px;
+     position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/tr.jpg');
+    object-fit: none;
+    width: 130%;
+    height: 150%;
+    z-index: -1;
+    opacity: .5;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client item{
+    padding: 20px;
+}
+
+#client img{
+    height: 344px;
+}
+
+/* Contact section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 131%;
+    height: 800px;
+    z-index: -1;
+    opacity: .6;
+    background: url('../img/burgeryum.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    height: 370px;
+    object-fit: none;
+}
+
+#contact-box input,
+#contact-box textarea{
+ width: 100%;
+ padding: 0.5rem;
+ border-radius: 9px;
+ font-size: 1.1rem;
+}
+#contact-box form{
+ width: 40%;
+}
+#contact-box label{
+    font-size: 0.9rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 2rem;
+    padding: 26px;
+    font-family: 'Roboto Mono', monospace;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px;
+    border-radius: 20px;
+    margin: 17px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color:white;
+    background-color: rgb(24, 143, 84);
+}
+.center{
+    text-align: center;
+    font-family: 'Ysabeau Infant', sans-serif;}
+
+
